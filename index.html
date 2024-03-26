@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mockup features</title>
+    <style>
+      .progress-circle {
+        position: relative;
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        background: conic-gradient(
+          transparent 0%,
+          red 0%
+        ); /* Starting gradient for border */
+        background-size: 200% 200%; /* Size of gradient */
+        transition: background-position 500ms ease;
+        transform: scaleX(-1);
+      }
+
+      .center-circle {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-color: white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="progressCircle" class="progress-circle">
+      <div class="center-circle"></div>
+    </div>
+
+    <script src="./circle.js"></script>
+  </body>
+</html>
