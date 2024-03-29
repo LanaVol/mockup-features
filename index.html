@@ -28,12 +28,23 @@
         height: 80px;
         border-radius: 50%;
         background-color: white;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 16px;
+        font-weight: 500;
+
+        span {
+          transform: scaleX(-1);
+        }
       }
     </style>
   </head>
   <body>
     <div id="progressCircle" class="progress-circle">
-      <div class="center-circle"></div>
+      <div class="center-circle">
+        <span>72%</span>
+      </div>
     </div>
 
     <script src="./circle.js"></script>
